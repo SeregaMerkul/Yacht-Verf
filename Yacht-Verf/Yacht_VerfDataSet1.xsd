@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Yacht_VerfDataSet1" targetNamespace="http://tempuri.org/Yacht_VerfDataSet1.xsd" xmlns:mstns="http://tempuri.org/Yacht_VerfDataSet1.xsd" xmlns="http://tempuri.org/Yacht_VerfDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Yacht_VerfConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Yacht_VerfConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Yacht_Verf.Properties.Settings.GlobalReference.Default.Yacht_VerfConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Clients_RUTableAdapter" GeneratorDataComponentClassName="Clients_RUTableAdapter" Name="Clients_RU" UserDataComponentName="Clients_RUTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Yacht_VerfConnectionString (Settings)" DbObjectName="dbo.Clients_RU" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Фамилия, Имя, Отчество, Дата_рождения, Телефон, Паспорт, Серия_паспорт, Номер_паспорта, Эл_Почта FROM dbo.Clients_RU</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Отчество" DataSetColumn="Отчество" />
+              <Mapping SourceColumn="Дата_рождения" DataSetColumn="Дата_рождения" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+              <Mapping SourceColumn="Паспорт" DataSetColumn="Паспорт" />
+              <Mapping SourceColumn="Серия_паспорт" DataSetColumn="Серия_паспорт" />
+              <Mapping SourceColumn="Номер_паспорта" DataSetColumn="Номер_паспорта" />
+              <Mapping SourceColumn="Эл_Почта" DataSetColumn="Эл_Почта" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Yacht_VerfDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Yacht_VerfDataSet1" msprop:Generator_DataSetName="Yacht_VerfDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Clients_RU" msprop:Generator_RowEvHandlerName="Clients_RURowChangeEventHandler" msprop:Generator_RowDeletedName="Clients_RURowDeleted" msprop:Generator_RowDeletingName="Clients_RURowDeleting" msprop:Generator_RowEvArgName="Clients_RURowChangeEvent" msprop:Generator_TablePropName="Clients_RU" msprop:Generator_RowChangedName="Clients_RURowChanged" msprop:Generator_RowChangingName="Clients_RURowChanging" msprop:Generator_TableClassName="Clients_RUDataTable" msprop:Generator_RowClassName="Clients_RURow" msprop:Generator_TableVarName="tableClients_RU" msprop:Generator_UserTableName="Clients_RU">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Фамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_UserColumnName="Фамилия" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_UserColumnName="Имя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество" msprop:Generator_ColumnPropNameInRow="Отчество" msprop:Generator_ColumnPropNameInTable="ОтчествоColumn" msprop:Generator_ColumnVarNameInTable="columnОтчество" msprop:Generator_UserColumnName="Отчество" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_рождения" msprop:Generator_ColumnPropNameInRow="Дата_рождения" msprop:Generator_ColumnPropNameInTable="Дата_рожденияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_рождения" msprop:Generator_UserColumnName="Дата_рождения" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Телефон" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_ColumnVarNameInTable="columnТелефон" msprop:Generator_UserColumnName="Телефон" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт" msprop:Generator_ColumnPropNameInRow="Паспорт" msprop:Generator_ColumnPropNameInTable="ПаспортColumn" msprop:Generator_ColumnVarNameInTable="columnПаспорт" msprop:Generator_UserColumnName="Паспорт" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Серия_паспорт" msprop:Generator_ColumnPropNameInRow="Серия_паспорт" msprop:Generator_ColumnPropNameInTable="Серия_паспортColumn" msprop:Generator_ColumnVarNameInTable="columnСерия_паспорт" msprop:Generator_UserColumnName="Серия_паспорт" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_паспорта" msprop:Generator_ColumnPropNameInRow="Номер_паспорта" msprop:Generator_ColumnPropNameInTable="Номер_паспортаColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_паспорта" msprop:Generator_UserColumnName="Номер_паспорта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Эл_Почта" msprop:Generator_ColumnPropNameInRow="Эл_Почта" msprop:Generator_ColumnPropNameInTable="Эл_ПочтаColumn" msprop:Generator_ColumnVarNameInTable="columnЭл_Почта" msprop:Generator_UserColumnName="Эл_Почта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

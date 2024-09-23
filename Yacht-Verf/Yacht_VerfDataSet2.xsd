@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Yacht_VerfDataSet2" targetNamespace="http://tempuri.org/Yacht_VerfDataSet2.xsd" xmlns:mstns="http://tempuri.org/Yacht_VerfDataSet2.xsd" xmlns="http://tempuri.org/Yacht_VerfDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Yacht_VerfConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Yacht_VerfConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Yacht_Verf.Properties.Settings.GlobalReference.Default.Yacht_VerfConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Orders_RUTableAdapter" GeneratorDataComponentClassName="Orders_RUTableAdapter" Name="Orders_RU" UserDataComponentName="Orders_RUTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Yacht_VerfConnectionString (Settings)" DbObjectName="dbo.Orders_RU" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Номер_заказа, Дата_подачи_заявки, Название_судна, Статус_заказа FROM dbo.Orders_RU</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер_заказа" DataSetColumn="Номер_заказа" />
+              <Mapping SourceColumn="Дата_подачи_заявки" DataSetColumn="Дата_подачи_заявки" />
+              <Mapping SourceColumn="Название_судна" DataSetColumn="Название_судна" />
+              <Mapping SourceColumn="Статус_заказа" DataSetColumn="Статус_заказа" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Yacht_VerfDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Yacht_VerfDataSet2" msprop:Generator_DataSetName="Yacht_VerfDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Orders_RU" msprop:Generator_RowEvHandlerName="Orders_RURowChangeEventHandler" msprop:Generator_RowDeletedName="Orders_RURowDeleted" msprop:Generator_RowDeletingName="Orders_RURowDeleting" msprop:Generator_RowEvArgName="Orders_RURowChangeEvent" msprop:Generator_TablePropName="Orders_RU" msprop:Generator_RowChangedName="Orders_RURowChanged" msprop:Generator_RowChangingName="Orders_RURowChanging" msprop:Generator_TableClassName="Orders_RUDataTable" msprop:Generator_RowClassName="Orders_RURow" msprop:Generator_TableVarName="tableOrders_RU" msprop:Generator_UserTableName="Orders_RU">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_заказа" msprop:Generator_ColumnPropNameInRow="Номер_заказа" msprop:Generator_ColumnPropNameInTable="Номер_заказаColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_заказа" msprop:Generator_UserColumnName="Номер_заказа" type="xs:int" />
+              <xs:element name="Дата_подачи_заявки" msprop:Generator_ColumnPropNameInRow="Дата_подачи_заявки" msprop:Generator_ColumnPropNameInTable="Дата_подачи_заявкиColumn" msprop:Generator_ColumnVarNameInTable="columnДата_подачи_заявки" msprop:Generator_UserColumnName="Дата_подачи_заявки" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Название_судна" msprop:Generator_ColumnPropNameInRow="Название_судна" msprop:Generator_ColumnPropNameInTable="Название_суднаColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_судна" msprop:Generator_UserColumnName="Название_судна" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Статус_заказа" msprop:Generator_ColumnPropNameInRow="Статус_заказа" msprop:Generator_ColumnPropNameInTable="Статус_заказаColumn" msprop:Generator_ColumnVarNameInTable="columnСтатус_заказа" msprop:Generator_UserColumnName="Статус_заказа" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Orders_RU" />
+      <xs:field xpath="mstns:Номер_заказа" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yacht-Verf", "Yacht-Verf\Yacht-Verf.csproj", "{FCA5A852-BDB1-4C8B-A383-83A43F13FD7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCA5A852-BDB1-4C8B-A383-83A43F13FD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA5A852-BDB1-4C8B-A383-83A43F13FD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA5A852-BDB1-4C8B-A383-83A43F13FD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA5A852-BDB1-4C8B-A383-83A43F13FD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95ABE989-591D-426A-B79A-076B9EC97761}
+	EndGlobalSection
+EndGlobal

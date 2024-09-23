@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Yacht_VerfDataSet9" targetNamespace="http://tempuri.org/Yacht_VerfDataSet9.xsd" xmlns:mstns="http://tempuri.org/Yacht_VerfDataSet9.xsd" xmlns="http://tempuri.org/Yacht_VerfDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Yacht_VerfConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Yacht_VerfConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Yacht_Verf.Properties.Settings.GlobalReference.Default.Yacht_VerfConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Prihodnaya_Nakladnaya_RUTableAdapter" GeneratorDataComponentClassName="Prihodnaya_Nakladnaya_RUTableAdapter" Name="Prihodnaya_Nakladnaya_RU" UserDataComponentName="Prihodnaya_Nakladnaya_RUTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Yacht_VerfConnectionString (Settings)" DbObjectName="dbo.Prihodnaya_Nakladnaya_RU" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер цены], [Название склада], [Название материала], [Единицы измерения], [Кол-во материала] FROM dbo.Prihodnaya_Nakladnaya_RU</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер цены" DataSetColumn="Номер цены" />
+              <Mapping SourceColumn="Название склада" DataSetColumn="Название склада" />
+              <Mapping SourceColumn="Название материала" DataSetColumn="Название материала" />
+              <Mapping SourceColumn="Единицы измерения" DataSetColumn="Единицы измерения" />
+              <Mapping SourceColumn="Кол-во материала" DataSetColumn="Кол-во материала" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Yacht_VerfDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Yacht_VerfDataSet9" msprop:Generator_DataSetName="Yacht_VerfDataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Prihodnaya_Nakladnaya_RU" msprop:Generator_RowEvHandlerName="Prihodnaya_Nakladnaya_RURowChangeEventHandler" msprop:Generator_RowDeletedName="Prihodnaya_Nakladnaya_RURowDeleted" msprop:Generator_RowDeletingName="Prihodnaya_Nakladnaya_RURowDeleting" msprop:Generator_RowEvArgName="Prihodnaya_Nakladnaya_RURowChangeEvent" msprop:Generator_TablePropName="Prihodnaya_Nakladnaya_RU" msprop:Generator_RowChangedName="Prihodnaya_Nakladnaya_RURowChanged" msprop:Generator_RowChangingName="Prihodnaya_Nakladnaya_RURowChanging" msprop:Generator_TableClassName="Prihodnaya_Nakladnaya_RUDataTable" msprop:Generator_RowClassName="Prihodnaya_Nakladnaya_RURow" msprop:Generator_TableVarName="tablePrihodnaya_Nakladnaya_RU" msprop:Generator_UserTableName="Prihodnaya_Nakladnaya_RU">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_цены" msprop:Generator_ColumnPropNameInRow="Номер_цены" msprop:Generator_ColumnPropNameInTable="Номер_ценыColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_цены" msprop:Generator_UserColumnName="Номер цены" type="xs:int" />
+              <xs:element name="Название_x0020_склада" msprop:Generator_ColumnPropNameInRow="Название_склада" msprop:Generator_ColumnPropNameInTable="Название_складаColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_склада" msprop:Generator_UserColumnName="Название склада" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_x0020_материала" msprop:Generator_ColumnPropNameInRow="Название_материала" msprop:Generator_ColumnPropNameInTable="Название_материалаColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_материала" msprop:Generator_UserColumnName="Название материала" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Единицы_x0020_измерения" msprop:Generator_ColumnPropNameInRow="Единицы_измерения" msprop:Generator_ColumnPropNameInTable="Единицы_измеренияColumn" msprop:Generator_ColumnVarNameInTable="columnЕдиницы_измерения" msprop:Generator_UserColumnName="Единицы измерения" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Кол-во_x0020_материала" msprop:Generator_ColumnPropNameInRow="_Кол_во_материала" msprop:Generator_ColumnPropNameInTable="_Кол_во_материалаColumn" msprop:Generator_ColumnVarNameInTable="_columnКол_во_материала" msprop:Generator_UserColumnName="Кол-во материала" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Prihodnaya_Nakladnaya_RU" />
+      <xs:field xpath="mstns:Номер_x0020_цены" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
